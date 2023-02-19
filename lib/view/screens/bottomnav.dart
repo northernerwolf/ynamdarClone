@@ -44,11 +44,11 @@ class _BottomNavState extends State<BottomNav> {
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.circular(12),
         child: SizedBox(
-          height: 65,
+          height: 76,
           child: Column(
             children: [
               SizedBox(
-                height: 56,
+                height: 70,
                 child: BottomNavigationBar(
                   elevation: 0,
                   selectedFontSize: 12,
