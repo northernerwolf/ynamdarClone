@@ -37,18 +37,18 @@ class _BottomNavState extends State<BottomNav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBody: true,
+      // extendBody: true,
       body: Center(
         child: screens.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.circular(12),
         child: SizedBox(
-          height: 76,
+          height: kBottomNavigationBarHeight,
           child: Column(
             children: [
               SizedBox(
-                height: 70,
+                height: kBottomNavigationBarHeight,
                 child: BottomNavigationBar(
                   elevation: 0,
                   selectedFontSize: 12,
@@ -172,11 +172,11 @@ class _BottomNavState extends State<BottomNav> {
                   onTap: _onItemTapped,
                 ),
               ),
-              Container(
-                height: 2,
-                width: 40,
-                color: Colors.orange,
-              ),
+              // Container(
+              //   height: 2,
+              //   width: 40,
+              //   color: Colors.orange,
+              // ),
             ],
           ),
         ),
