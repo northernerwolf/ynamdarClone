@@ -37,18 +37,19 @@ class _BottomNavState extends State<BottomNav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // extendBody: true,
+      extendBody: true,
+      resizeToAvoidBottomInset: true,
       body: Center(
         child: screens.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.circular(12),
         child: SizedBox(
-          height: kBottomNavigationBarHeight,
+          height: 85,
           child: Column(
             children: [
               SizedBox(
-                height: kBottomNavigationBarHeight,
+                height: 85,
                 child: BottomNavigationBar(
                   elevation: 0,
                   selectedFontSize: 12,
@@ -65,17 +66,6 @@ class _BottomNavState extends State<BottomNav> {
                     BottomNavigationBarItem(
                       icon: Column(
                         children: [
-                          // Visibility(
-                          //   visible: _selectedIndex == 0,
-                          //   child: Container(
-                          //     height: 2,
-                          //     width: 35,
-                          //     color: Colors.orange,
-                          //   ),
-                          // ),
-                          // const SizedBox(
-                          //   height: 10,
-                          // ),
                           Icon(Icons.home,
                               color:
                                   _selectedIndex == 0 ? Colors.orange : null),
@@ -86,17 +76,6 @@ class _BottomNavState extends State<BottomNav> {
                     BottomNavigationBarItem(
                       icon: Column(
                         children: [
-                          // Visibility(
-                          //   visible: _selectedIndex == 1,
-                          //   child: Container(
-                          //     height: 2,
-                          //     width: 35,
-                          //     color: Colors.orange,
-                          //   ),
-                          // ),
-                          // const SizedBox(
-                          //   height: 10,
-                          // ),
                           Icon(Icons.category,
                               color:
                                   _selectedIndex == 1 ? Colors.orange : null),
@@ -107,17 +86,6 @@ class _BottomNavState extends State<BottomNav> {
                     BottomNavigationBarItem(
                       icon: Column(
                         children: [
-                          // Visibility(
-                          //   visible: _selectedIndex == 2,
-                          //   child: Container(
-                          //     height: 2,
-                          //     width: 35,
-                          //     color: Colors.orange,
-                          //   ),
-                          // ),
-                          // const SizedBox(
-                          //   height: 9,
-                          // ),
                           Icon(Icons.shopping_cart,
                               color:
                                   _selectedIndex == 2 ? Colors.orange : null),
@@ -128,17 +96,6 @@ class _BottomNavState extends State<BottomNav> {
                     BottomNavigationBarItem(
                       icon: Column(
                         children: [
-                          // Visibility(
-                          //   visible: _selectedIndex == 3,
-                          //   child: Container(
-                          //     height: 2,
-                          //     width: 35,
-                          //     color: Colors.orange,
-                          //   ),
-                          // ),
-                          // const SizedBox(
-                          //   height: 9,
-                          // ),
                           Icon(Icons.favorite,
                               color:
                                   _selectedIndex == 3 ? Colors.orange : null),
@@ -149,17 +106,6 @@ class _BottomNavState extends State<BottomNav> {
                     BottomNavigationBarItem(
                       icon: Column(
                         children: [
-                          // Visibility(
-                          //   visible: _selectedIndex == 4,
-                          //   child: Container(
-                          //     height: 2,
-                          //     width: 35,
-                          //     color: Colors.orange,
-                          //   ),
-                          // ),
-                          // const SizedBox(
-                          //   height: 9,
-                          // ),
                           Icon(Icons.person,
                               color:
                                   _selectedIndex == 4 ? Colors.orange : null),
@@ -172,11 +118,6 @@ class _BottomNavState extends State<BottomNav> {
                   onTap: _onItemTapped,
                 ),
               ),
-              // Container(
-              //   height: 2,
-              //   width: 40,
-              //   color: Colors.orange,
-              // ),
             ],
           ),
         ),

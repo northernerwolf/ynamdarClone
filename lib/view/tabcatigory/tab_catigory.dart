@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
+import '../componets/catigory_components.dart';
 
 class CatigoryTab extends StatefulWidget {
   const CatigoryTab({super.key});
@@ -17,377 +17,75 @@ class _CatigoryTabState extends State<CatigoryTab> {
         child: Card(
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.card_giftcard,
-                          color: AppConstants.appColor,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'SÖWDA ŞÜWELEŇ',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                  ],
-                ),
+              catigoryButton(
+                Icons.card_giftcard,
+                'SÖWDA ŞÜWELEŇ',
+                Icons.add,
               ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.card_travel,
-                          color: AppConstants.appColor,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Arzanladyş we Aksiýalar',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    const Icon(Icons.add, color: Colors.black)
-                  ],
-                ),
+              catigoryButton(
+                Icons.card_travel,
+                'Arzanladyş we Aksiýalar',
+                Icons.add,
               ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.apple,
-                          color: AppConstants.appColor,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Gök we bakja önumleri',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    const Icon(Icons.add, color: Colors.black),
-                  ],
-                ),
+              catigoryButton(
+                Icons.card_giftcard,
+                'Gök we bakja önumleri',
+                Icons.add,
               ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.card_giftcard,
-                          color: AppConstants.appColor,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Et, towuk, balyk',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                  ],
-                ),
+              catigoryButton(
+                Icons.card_travel,
+                'Et, towuk, balyk',
+                Icons.add,
               ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.card_travel,
-                          color: AppConstants.appColor,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Süýt önümleri, ertirlik, ýumurtga',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                  ],
-                ),
+              catigoryButton(
+                Icons.card_giftcard,
+                'Süýt önümleri, ertirlik, ýumurtga',
+                Icons.add,
               ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.card_giftcard,
-                          color: AppConstants.appColor,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Et, towuk, balyk',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                  ],
-                ),
+              catigoryButton(
+                Icons.card_travel,
+                'Et, towuk, balyk',
+                Icons.add,
               ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.card_travel,
-                          color: AppConstants.appColor,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Süýt önümleri, ertirlik, ýumurtga',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                  ],
-                ),
+              catigoryButton(
+                Icons.card_travel,
+                'Et, towuk, balyk',
+                Icons.add,
               ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.card_giftcard,
-                          color: AppConstants.appColor,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Et, towuk, balyk',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                  ],
-                ),
+              catigoryButton(
+                Icons.card_giftcard,
+                'Süýt önümleri, ertirlik, ýumurtga',
+                Icons.add,
               ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.card_travel,
-                          color: AppConstants.appColor,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Süýt önümleri, ertirlik, ýumurtga',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                  ],
-                ),
+              catigoryButton(
+                Icons.card_travel,
+                'Et, towuk, balyk',
+                Icons.add,
               ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.card_giftcard,
-                          color: AppConstants.appColor,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Et, towuk, balyk',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                  ],
-                ),
+              catigoryButton(
+                Icons.card_travel,
+                'Et, towuk, balyk',
+                Icons.add,
               ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.card_travel,
-                          color: AppConstants.appColor,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Süýt önümleri, ertirlik, ýumurtga',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                  ],
-                ),
+              catigoryButton(
+                Icons.card_giftcard,
+                'Süýt önümleri, ertirlik, ýumurtga',
+                Icons.add,
               ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.card_giftcard,
-                          color: AppConstants.appColor,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Et, towuk, balyk',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                  ],
-                ),
+              catigoryButton(
+                Icons.card_travel,
+                'Et, towuk, balyk',
+                Icons.add,
               ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.card_travel,
-                          color: AppConstants.appColor,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Süýt önümleri, ertirlik, ýumurtga',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                  ],
-                ),
+              catigoryButton(
+                Icons.card_giftcard,
+                'Süýt önümleri, ertirlik, ýumurtga',
+                Icons.add,
               ),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: const [
-                        Icon(
-                          Icons.card_giftcard,
-                          color: AppConstants.appColor,
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          'Et, towuk, balyk',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ],
-                    ),
-                    const Icon(
-                      Icons.add,
-                      color: Colors.black,
-                    ),
-                  ],
-                ),
+              catigoryButton(
+                Icons.card_travel,
+                'Et, towuk, balyk',
+                Icons.add,
               ),
             ],
           ),

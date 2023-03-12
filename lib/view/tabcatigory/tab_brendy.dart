@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ynamdar_clone/view/componets/search.dart';
 
 class BredyTab extends StatefulWidget {
   const BredyTab({super.key});
@@ -14,28 +15,8 @@ class _BredyTabState extends State<BredyTab> {
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(10.0),
-          child: Container(
-            decoration: BoxDecoration(
-                color: Colors.white, borderRadius: BorderRadius.circular(10)),
-            height: 50,
-            child: Row(
-              children: const [
-                SizedBox(
-                  width: 10,
-                ),
-                Icon(
-                  Icons.search,
-                  color: Colors.deepPurple,
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  'Gözleg',
-                  style: TextStyle(color: Colors.deepPurple),
-                )
-              ],
-            ),
+          child: Column(
+            children: [Search()],
           ),
         ),
       ),
