@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:ynamdar_clone/view/screens/profil/sign_up.dart';
 
 import '../componets/settings_components.dart';
 
-class ProfilScreen extends StatefulWidget {
+class ProfilScreen extends StatelessWidget {
   const ProfilScreen({super.key});
 
-  @override
-  State<ProfilScreen> createState() => _ProfilScreenState();
-}
-
-class _ProfilScreenState extends State<ProfilScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,9 +18,17 @@ class _ProfilScreenState extends State<ProfilScreen> {
           padding: const EdgeInsets.all(10),
           child: Column(
             children: [
-              settingsButton(
-                Icons.person,
-                'Hasaba al',
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const SiginUpUser()));
+                },
+                child: settingsButton(
+                  Icons.person,
+                  'Hasaba al',
+                ),
               ),
               settingsButton(
                 Icons.login,
